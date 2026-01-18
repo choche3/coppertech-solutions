@@ -33,7 +33,7 @@ function updateTestimonial(){
     if(!textE1 || !authorE1) return;
 
     textE1.textContent = testimonials[currentTestimonial].text;
-    authorE1.textContent ='${testimonials[currentTestimonial],author}';
+    authorE1.textContent ='${testimonials[currentTestimonial].author}';
 
     currentTestimonial= (currentTestimonial + 1)% testimonials.length;
 }

@@ -33,9 +33,10 @@
 
     <section class="contact-form">
         <form id="contactForm" action="https://formspree.io/f/xeerqkag" method="POST">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your message to us" required></textarea>
+            <input type="hidden" name="_subject" value="New message from CopperTech Website">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your message to us" required></textarea>
             <button type="submit">Send Message</button>
             <p id="form-status"></p>
         </form>

@@ -1,4 +1,4 @@
-
+/*resetting global variables*/
 
 * {
     margin: 0;
@@ -74,6 +74,9 @@ header{
 .nav-links{
     display: flex;
     gap: 1.5rem;
+}
+.nav-links.active {
+    display: block;
 }
 
 .nav-links a{
